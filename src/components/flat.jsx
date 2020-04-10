@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 
-class Flat extends Component {
-  handleClick = () => {
-    if (this.props.selectGif) {
-      this.props.selectGif(this.props.id);
-    }
-  }
+import flats from '././data/flats.js';
 
-  render() {
-    const src = `https://media2.giphy.com/media/${this.props.id}/200.gif`;
-    return (
-      <img src={src} className="gif" onClick={this.handleClick} />
-    );
-  }
-}
+const Flat = (props) => {
+  return (
+    <div class="card" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(`${props.flats.imageUrl}`;);">
+    <div class="card-category"> {props.flats.price} EUR</div>
+    <div class="card-description">
+        <h2>{props.flats.price}</h2>
+    </div>
+    <a class="card-link" href="#"></a>
+    </div>
+  );
+};
 
 export default Flat;

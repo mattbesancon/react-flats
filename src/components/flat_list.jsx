@@ -3,8 +3,8 @@ import Flat from './flat';
 
 const FlatList = (props) => {
   return (
-    <div className="gif-list">
-      {props.gifs.map(gif => <Gif id={gif.id} key={gif.id} selectGif={props.selectGif} />)}
+    <div className="flat-list">
+      {props.flats.map(flat => <Flat id={flat.id} />)}
     </div>
   );
 };
