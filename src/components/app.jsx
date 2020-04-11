@@ -6,19 +6,12 @@ import Marker from './marker';
 import FlatList from './flat_list';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      flats: []
-    };
-  }
 
   render() {
     return (
       <div>
         <div className="flat-list">
-          <FlatList flats={this.state.flats}/>
+          <FlatList />
         </div>
         <div className="map-container">
           <SimpleMap />
@@ -29,6 +22,7 @@ class App extends Component {
       </div>
     );
   }
-}
+
+};
 
 export default App;
