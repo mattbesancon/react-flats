@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 
 import SimpleMap from './simple_map';
 import Marker from './marker';
-import Flat from './flat';
 import FlatList from './flat_list';
 
 class App extends Component {
