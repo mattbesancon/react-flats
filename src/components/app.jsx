@@ -4,14 +4,22 @@ import React, { Component } from 'react';
 import SimpleMap from './simple_map';
 import Marker from './marker';
 import FlatList from './flat_list';
+import flats from '../../data/flats';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      flats,
+    };
+  }
 
   render() {
     return (
       <div>
         <div className="flat-list">
-          <FlatList />
+          <FlatList flats={this.state.flats}/>
         </div>
         <div className="map-container">
           <SimpleMap />
@@ -22,7 +30,6 @@ class App extends Component {
       </div>
     );
   }
-
-};
+}
 
 export default App;
