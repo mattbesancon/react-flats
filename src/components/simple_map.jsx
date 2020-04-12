@@ -3,8 +3,6 @@ import GoogleMapReact from 'google-map-react';
 import Marker from './marker';
 import flats from '../../data/flats';
 
-const Marker = ({ text }) => <div>{text}</div>;
-
 class SimpleMap extends Component {
   static defaultProps = {
     center: {
