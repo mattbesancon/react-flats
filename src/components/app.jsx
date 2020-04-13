@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-
 import SimpleMap from './simple_map';
 import Marker from './marker';
 import FlatList from './flat_list';
+
 import flats from '../../data/flats';
 
 class App extends Component {
